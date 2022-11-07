@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon archive"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="title-of-page slide mod-white-text mod-slide-height-1">
+            <div class="slide__img">
+                <picture>
+                    <source media="(max-width: 567px)" type="image/webp" srcset="img/content/mountain-bike-img-small.webp">
+                    <source media="(max-width: 567px)" srcset="img/content/mountain-bike-img-small.jpg">
+
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="img/content/mountain-bike-img-middle.webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/mountain-bike-img-middle.jpg">
+
+                    <source media="(min-width: 1024px)" type="image/webp" srcset="img/content/mountain-bike-img.webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/mountain-bike-img.jpg">
+                    <img src="img/content/mountain-bike-img.jpg" width="1920" height="408" alt="">
+                </picture>
+            </div>
+            <div class="slide__text">
+                <div class="top-of-the-page">
+                    <div class="wrap">
+                        <nav class="box-for-breadcrumbs">
+                            <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="index.html"><span itemprop="name">Головна</span></a>
+                                    <meta itemprop="position" content="1">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="leon_archive-year.html"><span itemprop="name">Архів</span></a>
+                                    <meta itemprop="position" content="2">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="#"><span itemprop="name">2020</span></a>
+                                    <meta itemprop="position" content="3">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="#"><span itemprop="name">Велосипеди</span></a>
+                                    <meta itemprop="position" content="4">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <span itemprop="name">Гірські</span><meta itemprop="position" content="5">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="slide__text-overflow">
+                    <div class="wrap">
+                        <div class="slide__title">
+                            <div class="slide__title-text">
+                                Велосипеди
+                            </div>
+                            <h1>Гірські</h1>
+                        </div>
+                        <div class="slide__text-info">
+                            Створені для активного проведення часу по бездоріжі та дорогам. Трейлові велосипеди, крос
+                            кантрійні велосипеди, дьортові велосипеди або електро гірські велосипеди.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide__text-mobile slide__text-info">
+            Створені для активного проведення часу по бездоріжі та дорогам. Трейлові велосипеди, крос
+            кантрійні велосипеди, дьортові велосипеди або електро гірські велосипеди.
+        </div>
+        <div class="wrap">
+            <div class="box-for-product">
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                @@include('html/_product.htm',{})
+                <div class="b-more">
+                    <a href="#" class="btn btn-size-1 btn-color-2">
+                                <span class="btn__content">
+                                    Показати ще
+                                </span>
+                    </a>
+                </div>
+                @@include('html/_pagination.htm',{})
+            </div>
+        </div>
+
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
