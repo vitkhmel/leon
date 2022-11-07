@@ -13,7 +13,7 @@
 	<link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20221107204103">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221107213222">
 
 
 </head>
@@ -2904,13 +2904,71 @@
 	</div>
 	<!--window-message end-->
 
+	<!--feedback-window begin-->
+	<div id="feedback-window" class="feedback-window modal-window">
+		<div class="window__wrap">
+			<div class="window__content type-1">
+				<a href="#" class="modal-window-close">
+					<svg width="21" height="21">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+					</svg>
+				</a>
+				<div class="window__title">
+					Написати нам
+				</div>
+				<form class="window-form">
+					<div class="form__line">
+						<label>
+							<input type="tel" required="">
+							<div class="label-text">Номер телефону*</div>
+							<div class="label-border"></div>
+						</label>
+					</div>
+					<div class="form__line">
+						<label>
+							<input type="text" required="">
+							<div class="label-text">Ім’я*</div>
+							<div class="label-border"></div>
+						</label>
+					</div>
+					<div class="form__line">
+						<label>
+							<input type="email" required="">
+							<div class="label-text">E-mail*</div>
+							<div class="label-border"></div>
+						</label>
+					</div>
+					<div class="form__line">
+						<label>
+							<input type="text" required="">
+							<div class="label-text">Повідомлення*</div>
+							<div class="label-border"></div>
+						</label>
+					</div>
+					<div class="form__line form-line-for-btn">
+						<button type="submit" class="btn btn-size-1 btn-color-2">
+							<span class="btn__content">
+								Відправити
+							</span>
+						</button>
+					</div>
+				</form>
+				<div class="window__agreement agreement">
+					Я даю згоду на обробку персональних даних згідно <a href="#">Політики конфіденційності</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--feedback-window end-->
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221107204103" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-	<script src="https://cdn.jsdelivr.net/gh/graingert/WOW@1.3.0/dist/wow.min.js?_v=20221107204103" defer></script>
 
 
-	<script src="js/app.min.js?_v=20221107204103" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221107213222" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/graingert/WOW@1.3.0/dist/wow.min.js?_v=20221107213222" defer></script>
+
+
+	<script src="js/app.min.js?_v=20221107213222" defer></script>
 
 
 </body>
