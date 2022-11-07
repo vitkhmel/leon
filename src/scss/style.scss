@@ -3685,7 +3685,7 @@ form.mod-font-size label.label-for-textarea.not-empty-line .label-text {
 	}
 }
 
-.b-diler__info-unit {
+.b-dealer__info-unit {
 	cursor: pointer;
 	line-height: 20px;
 	padding: 15px 0 17px;
@@ -3693,7 +3693,7 @@ form.mod-font-size label.label-for-textarea.not-empty-line .label-text {
 	&.active {
 		background: #FBFBFB;
 		padding: 20px;
-		.b-diler__info-unit-title {
+		.b-dealer__info-unit-title {
 			color: $color-2;
 		}
 	}
@@ -3701,12 +3701,12 @@ form.mod-font-size label.label-for-textarea.not-empty-line .label-text {
 		background: #FBFBFB;
 	}
 }
-.b-diler__info-unit-title {
+.b-dealer__info-unit-title {
 	font-size: 15px;
 	font-weight: 500;
 }
 
-.b-diler__info {
+.b-dealer__info {
 	overflow: auto;
 	max-height: 380px;
 	margin-bottom: 30px;

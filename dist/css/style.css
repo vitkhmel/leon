@@ -7810,32 +7810,32 @@ form.mod-font-size label .label-text {
   width: 1px;
 }
 
-.b-diler__info-unit {
+.b-dealer__info-unit {
   cursor: pointer;
   line-height: 20px;
   padding: 15px 0 17px;
   border-bottom: 1px solid #D8D8D8;
 }
 
-.b-diler__info-unit.active {
+.b-dealer__info-unit.active {
   background: #FBFBFB;
   padding: 20px;
 }
 
-.b-diler__info-unit.active .b-diler__info-unit-title {
+.b-dealer__info-unit.active .b-dealer__info-unit-title {
   color: #d10a0a;
 }
 
-.b-diler__info-unit:hover {
+.b-dealer__info-unit:hover {
   background: #FBFBFB;
 }
 
-.b-diler__info-unit-title {
+.b-dealer__info-unit-title {
   font-size: 15px;
   font-weight: 500;
 }
 
-.b-diler__info {
+.b-dealer__info {
   overflow: auto;
   max-height: 380px;
   margin-bottom: 30px;
