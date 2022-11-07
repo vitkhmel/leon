@@ -296,6 +296,25 @@ $(document).ready(function () {
         });
         $(".ui-slider-amount").val($(".ui-slider").slider("value"));
     }
+
+    //filter price slider begin
+    if ($('.sliders').length) {
+        $(".sliders").slider({
+            range: true,
+            min: 0,
+            max: 9999,
+            values: [ 0, 9999 ],
+            slide: function( event, ui ) {
+                $( "#amount11" ).val( ui.values[ 0 ] );
+                $( "#amount12" ).val( ui.values[ 1 ] );
+            }
+        });
+        $( "#amount11" ).val( $( ".sliders" ).slider( "values", 0 ) );
+        $( "#amount12" ).val($( ".sliders" ).slider( "values", 1 ) );
+    }
+    //filter price slider end
+
+
     //jQuery UI Slider end
 
     //select begin

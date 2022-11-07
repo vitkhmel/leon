@@ -52,7 +52,8 @@ body {
 	font-weight: normal;
 	line-height: 22px;
 	-webkit-font-smoothing: antialiased;
-	font-display: swap;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
 
 	.wrapper:before {
 		content: '';
@@ -1232,7 +1233,7 @@ input[type="login"] {
 	}
 	/* Firefox 19+ */
 	&:-moz-placeholder {
-		ccolor: #7f7f7f;
+		color: #7f7f7f;
 	}
 	/* Firefox 18- */
 	&:-ms-input-placeholder {
@@ -2332,6 +2333,7 @@ input[type="radio"]:checked + .step__label {
 			border: 12px solid #fcfcfc;
 			background-color: #d10a0a;
 			border-radius: 50%;
+			z-index: 2;
 		}
 		.ui-slider-range-min:before {
 			content: '';
@@ -2831,6 +2833,7 @@ form .sliders {
 		cursor: pointer;
 		border-radius: 50%;
 		background-color: $color-2;
+		z-index: 2;
 		&:before {
 			content: '';
 			display: block;
@@ -3650,8 +3653,8 @@ form.mod-font-size label.label-for-textarea.not-empty-line .label-text {
 		margin-bottom: 44px;
 	}
 	::-webkit-scrollbar-button {
-		background-image:url('');
-		background-repeat:no-repeat;
+		//background-image:url('');
+		//background-repeat:no-repeat;
 		width:1px;
 		height:0px
 	}
@@ -3671,8 +3674,8 @@ form.mod-font-size label.label-for-textarea.not-empty-line .label-text {
 	}
 
 	::-webkit-resizer{
-		background-image:url('');
-		background-repeat:no-repeat;
+		//background-image:url('');
+		//background-repeat:no-repeat;
 		width:1px;
 		height:0px
 	}
@@ -8026,7 +8029,7 @@ body.header-fixed .header__top-line {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		border-left: none;
-		padding: 40px 24px 30px;
+		padding: 40px 24px 90px;
 	}
 
 	body.filter-open {
@@ -8084,8 +8087,10 @@ body.header-fixed .header__top-line {
 		width: 100%;
 		margin-bottom: 20px;
 		padding-left: 10px;
+		background-image: none !important;
+		top: 0 !important;
+		margin-top: 20px;
 	}
-
 
 
 	.filter-page .page-columns__big {
@@ -10585,7 +10590,6 @@ body.header-fixed .header__top-line {
 		overflow: hidden;
 	}
 	.comparison-product .comparison-product__delete-product {
-		top: -10p;
 		right: 0px;
 	}
 	.comparison-product {

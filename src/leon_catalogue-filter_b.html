@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon archive"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="filter-page">
+            <div class="title-of-page slide mod-white-text mod-slide-height-1">
+                <div class="slide__img">
+                    <picture>
+                        <source media="(max-width: 1023px)" type="image/webp" srcset="img/content/mountain-bike-img-middle.webp">
+                        <source media="(max-width: 1023px)" srcset="img/content/mountain-bike-img-middle.jpg">
+
+                        <source media="(min-width: 1024px)" type="image/webp" srcset="img/content/mountain-bike-img.webp">
+                        <source media="(min-width: 1024px)" srcset="img/content/mountain-bike-img.jpg">
+                        <img src="img/content/mountain-bike-img.jpg" width="1920" height="408" alt="mountain bike">
+                    </picture>
+                </div>
+                <div class="slide__text">
+                    <div class="top-of-the-page">
+                        <div class="wrap">
+                            <nav class="box-for-breadcrumbs">
+                                <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                                    <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                        <a itemprop="item" href="index.html"><span itemprop="name">Головна</span></a>
+                                        <meta itemprop="position" content="1">
+                                    </div>
+                                    <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                        <a itemprop="item" href="leon_catalogue-categories.html"><span itemprop="name">Велосипеди</span></a>
+                                        <meta itemprop="position" content="4">
+                                    </div>
+                                    <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                        <span itemprop="name">Гірські</span><meta itemprop="position" content="5">
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="slide__text-overflow">
+                        <div class="wrap">
+                            <div class="slide__title">
+                                <div class="slide__title-text">
+                                    Велосипеди
+                                </div>
+                                <h1>Гірські</h1>
+                            </div>
+                            <div class="slide__text-info">
+                                Створені для активного проведення часу по бездоріжі та дорогам. Трейлові велосипеди, крос
+                                кантрійні велосипеди, дьортові велосипеди або електро гірські велосипеди.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__text-mobile slide__text-info">
+                Створені для активного проведення часу по бездоріжі та дорогам. Трейлові велосипеди, крос
+                кантрійні велосипеди, дьортові велосипеди або електро гірські велосипеди.
+            </div>
+            <div class="wrap">
+                <div class="page-columns">
+                    <aside class="page-columns__small filter-aside">
+                        <div class="filter-aside__title">Фільтр</div>
+                        <form class="filter-form">
+                            <button class="filter-close-btn close-btn" aria-label="close">
+                                <svg width="21" height="21">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+                                </svg>
+                            </button>
+                            <div class="filter-box-top">
+                                <div class="filter-box-top__top-line">
+                                    <div class="filter__title">
+                                        Вы выбрали
+                                    </div>
+                                    <a class="filter__clear" href="#">Очистити все</a>
+                                </div>
+
+                                <div class="filter-box-top__btns">
+                                    <a class="btn btn-type2" href="#">
+                                        Рік 2020
+                                        <span class="del-icon"></span>
+                                    </a>
+                                    <a class="btn btn-type2" href="#">
+                                        Розмір колес 26’’
+                                        <span class="del-icon"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="filter__list-group">
+                                <div class="line-accordion mod-price">
+                                    <div class="accordion-name">
+                                        <span class="accordion-name__title">Ціна</span>
+                                    </div>
+                                    <div class="accordion-info">
+                                        <div class="form__sliders_box">
+                                            <div class="sliders_box-inputs">
+                                                <div class="sliders_unit form__input price">
+                                                    <input type="text" id="amount11" class="amount" value="0"/>
+                                                </div>
+                                                <div class="sliders_unit form__input price">
+                                                    <input type="text" id="amount12" class="amount" value="9999"/>
+                                                </div>
+                                            </div>
+                                            <div class="sliders"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-accordion">
+                                    <div class="accordion-name">
+                                        <span class="accordion-name__title">Бренд</span>
+                                    </div>
+                                    <div class="accordion-info">
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check1">
+                                                <label for="check1">Трейлові</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check2">
+                                                <label for="check2">Кросс кантрійні</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check3" disabled>
+                                                <label for="check3">Дьортові</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-accordion">
+                                    <div class="accordion-name">
+                                        <span class="accordion-name__title">Рік</span>
+                                    </div>
+                                    <div class="accordion-info">
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check4">
+                                                <label for="check4">2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check5">
+                                                <label for="check5">2020</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox line">
+                                            <div class="form_checkbox">
+                                                <input type="checkbox" id="check6" disabled>
+                                                <label for="check6">2019</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-apply clr" style="top: 273px; display: block;">
+                                <a class="btn-apply__show" href="#"><span>Показати</span></a>
+                                <div class="btn-apply__text">Знайдено <br> товарів <span class="bold">121</span></div>
+                                <a class="btn-apply__close" href="#" aria-label="close"></a>
+                            </div>
+                        </form>
+                    </aside>
+                    <div class="page-columns__big">
+                        <div class="top-filter">
+                            <a href="#" class="filter-btn">Фільтр</a>
+                            <div class="top-filter__unit">
+                                <div class="top-filter__unit-title">Сортування</div>
+                                <div class="form__select small-select">
+                                    <select>
+                                        <option value="Варіант1">Від дешевших</option>
+                                        <option value="Варіант2">Варіант2</option>
+                                        <option value="Варіант3">Варіант3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-for-product">
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            @@include('html/_product-2-sale.htm',{})
+                            @@include('html/_product-2.htm',{})
+                            @@include('html/_product-2-new.htm',{})
+                            <div class="b-more">
+                                <a href="#" class="btn btn-size-1 btn-color-2">
+                                <span class="btn__content">
+                                    Показати ще
+                                </span>
+                                </a>
+                            </div>
+                            @@include('html/_pagination.htm',{})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
