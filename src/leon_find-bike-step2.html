@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon quiz form"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content find-bike-page">
+        <form class="step">
+            <div class="wrap">
+                <div class="step__number">
+                    Крок 2 з 4
+                </div>
+                <h3 class="step__title">
+                    Який маєте зріст?
+                </h3>
+                <div class="text step__text">
+                    <p>
+                        В давні часи думали, що всі люди однакові, і велосипеди повинні бути однаковими. Але потім
+                        виявилося, що всі люди різні, і велосипеди повинні бути різними по розміру. А це на самперед
+                        важливо для вашого комфорту.
+                    </p>
+                </div>
+
+                <div class="step__ui-slider">
+                    <div class="step__ui-slider-line">
+                        <input type="text" class="ui-slider-amount step__ui-slider-amount" readonly>
+                        <div class="step__ui-slider-text">см</div>
+                    </div>
+                    <div class="ui-slider"></div>
+                </div>
+
+                <div class="step__line-for-btn">
+                    <a href="leon_find-bike-step3.html" class="btn btn-size-1 btn-color-3">
+                            <span class="btn__content">
+                                Наступний крок
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+

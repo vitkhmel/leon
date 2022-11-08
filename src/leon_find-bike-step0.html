@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon quiz form"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content find-bike-page">
+        <div class="title-of-page slide">
+            <div class="slide__img">
+                <picture>
+                    <source media="(max-width: 567px)" type="image/webp" srcset="img/find-bike-img-small.webp">
+                    <source media="(max-width: 567px)" srcset="img/find-bike-img-small.jpg">
+
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="img/find-bike-img-middle.webp">
+                    <source media="(max-width: 1023px)" srcset="img/find-bike-img-middle.jpg">
+
+                    <source media="(min-width: 1024px)" type="image/webp" srcset="img/find-bike-img.webp">
+                    <source media="(min-width: 1024px)" srcset="img/find-bike-img.jpg">
+                    <img src="img/find-bike-img.jpg" width="1920" height="861" alt="picture of a bicycle">
+                </picture>
+            </div>
+            <div class="slide__text">
+                <div class="top-of-the-page">
+                    <div class="wrap">
+                        <nav class="box-for-breadcrumbs">
+                            <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="index.html"><span itemprop="name">Головна</span></a>
+                                    <meta itemprop="position" content="1">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <span itemprop="name">Підбір велосипеду</span><meta itemprop="position" content="2">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="slide__text-overflow">
+                    <div class="wrap">
+                        <div class="slide__title">
+                            <div class="slide__title-text">
+                                без вагань до правильного вибору
+                            </div>
+                            <h1>Підбір велосипЕДУ</h1>
+                        </div>
+                        <div class="slide__text-info">
+                            Знайди свій ідеальний велосипед
+                        </div>
+                        <div class="slide__text-line-fot-btn">
+                            <a href="leon_find-bike-step1.html" class="btn btn-size-1 btn-color-2">
+                                <span class="btn__content">
+                                    Розпочати підбір
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+

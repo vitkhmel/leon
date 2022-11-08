@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon quiz form"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content find-bike-page">
+        <form class="step">
+            <div class="wrap">
+                <div class="step__number">
+                    Крок 3 з 4
+                </div>
+                <h3 class="step__title">
+                    Де плануете кататись?
+                </h3>
+                <div class="text step__text">
+                    <p>
+                        Важливо зорієнтуватись зі стилем та місцевістью катання, від цього залежіть геометрія та розмір
+                        рами, та взагалі тип велоспеду. Адже від цього в подальшому буде залежати виносливість
+                        велосипеду. Оберіть тут місцевість, а сайт врахує це при підборі.
+                    </p>
+                </div>
+                <div class="step__variants">
+                    <div class="step__variant">
+                        <input class="step__radio" id="variant-1" type="radio" name="step__variants">
+                        <label class="step__label" for="variant-1">
+                        <span class="step__variant-img">
+                            <img decoding="async" loading="lazy" src="img/city-img.jpg" width="111" height="111" alt="city">
+                        </span>
+                            <span class="step__variant-text">
+                            Місто
+                        </span>
+                        </label>
+                    </div>
+                    <div class="step__variant">
+                        <input class="step__radio" id="variant-2" type="radio" name="step__variants">
+                        <label class="step__label" for="variant-2">
+                        <span class="step__variant-img">
+                            <img decoding="async" loading="lazy" src="img/forest-img.jpg" width="111" height="111" alt="forest">
+                        </span>
+                            <span class="step__variant-text">
+                            Лісні тропи
+                        </span>
+                        </label>
+                    </div>
+                    <div class="step__variant">
+                        <input class="step__radio" id="variant-3" type="radio" name="step__variants">
+                        <label class="step__label" for="variant-3">
+                        <span class="step__variant-img">
+                            <img decoding="async" loading="lazy" src="img/road-img.jpg" width="111" height="111" alt="road">
+                        </span>
+                            <span class="step__variant-text">
+                            Дорога
+                        </span>
+                        </label>
+                    </div>
+                    <div class="step__variant">
+                        <input class="step__radio" id="variant-4" type="radio" name="step__variants">
+                        <label class="step__label" for="variant-4">
+                        <span class="step__variant-img">
+                            <img decoding="async" loading="lazy" src="img/mountains-img.jpg" width="111" height="111" alt="mountains">
+                        </span>
+                            <span class="step__variant-text">
+                            Горні райони
+                        </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="step__line-for-btn">
+                    <a href="leon_find-bike-step4.html" class="btn btn-size-1 btn-color-3">
+                            <span class="btn__content">
+                                Наступний крок
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+

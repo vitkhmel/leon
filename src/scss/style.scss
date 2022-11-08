@@ -2203,6 +2203,7 @@ h3 + .b-title__line,
 	cursor: pointer;
 }
 .step__variant-img {
+	display: block;
 	position: relative;
 	line-height: 0;
 	margin-bottom: 17px;
@@ -2215,6 +2216,7 @@ h3 + .b-title__line,
 	}
 }
 .step__variant-text {
+	display: block;
 	font-size: 16px;
 	font-weight: 500;
 }

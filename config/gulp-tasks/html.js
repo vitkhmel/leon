@@ -20,7 +20,9 @@ export const html = () => {
 			'append': {
 				'key': '_v',
 				'cover': 0,
-				'to': ['css', 'js', 'img']
+				// 'to': ['css', 'js', 'img']
+				'to': ['img']
+
 			},
 			'output': {
 				'file': 'config/version.json'
