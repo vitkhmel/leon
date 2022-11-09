@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon news"
+})
+
+<body class="subpage">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="title-of-page slide mod-white-text mod-news">
+            <div class="slide__img">
+                <picture>
+                    <source media="(max-width: 567px)" type="image/webp" srcset="img/news-slide-small.webp">
+                    <source media="(max-width: 567px)" srcset="img/news-slide-small.jpg">
+
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="img/news-slide-middle.webp">
+                    <source media="(max-width: 1023px)" srcset="img/news-slide-middle.jpg">
+
+                    <source media="(min-width: 1024px)" type="image/webp" srcset="img/news-slide.webp">
+                    <source media="(min-width: 1024px)" srcset="img/news-slide.jpg">
+                    <img src="img/news-slide.jpg" width="1920" height="525" alt="Друзі діляться між собою новинами">
+                </picture>
+            </div>
+            <div class="slide__text">
+                <div class="top-of-the-page">
+                    <div class="wrap">
+                        <nav class="box-for-breadcrumbs">
+                            <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <a itemprop="item" href="index.html"><span itemprop="name">Головна</span></a>
+                                    <meta itemprop="position" content="1">
+                                </div>
+                                <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                    <span itemprop="name">Новини</span><meta itemprop="position" content="2">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="slide__text-overflow">
+                    <div class="wrap">
+                        <div class="slide__title">
+                            <div class="slide__title-text">
+                                АКТУАЛЬНі З leon
+                            </div>
+                            <h1>Новини</h1>
+                        </div>
+                        <div class="slide__text-info">
+                            Події компанії, впровадження технологій, огляди.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-for-instagram">
+            <ul class="b-instagram">
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+                <li class="b-instagram__item mod-social">
+                    <div class="b-instagram__social">
+                        <div class="socials-2">
+                            <div class="socials-2__content">
+                                <div class="socials-2__title">
+                                    СЛІДКУЙТЕ <br> ЗА Leon
+                                    <div class="socials-2__line wow bounceInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="100"></div>
+                                </div>
+                                <ul class="socials-2__links">
+                                    <li class="socials-2__item">
+                                        <a href="#" class="socials-2__link">Instagram</a>
+                                    </li>
+                                    <li class="socials-2__item">
+                                        <a href="#" class="socials-2__link">Facebook</a>
+                                    </li>
+                                    <li class="socials-2__item">
+                                        <a href="#" class="socials-2__link">Youtube</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img-2.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img-2.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+                <li class="b-instagram__item">
+                    <a href="#" class="b-instagram__link">
+                        <img decoding="async" src="img/content/insta-img-2.jpg"  width="271" height="271" alt="temporary picture">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <section class="box-for-news">
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-1.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.5s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-1.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.5s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.9s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-1.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.5s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-1.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.9s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.5s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-1.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="b-news wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.9s" data-wow-offset="200">
+                    <a href="leon_news-detail.html" class="b-news__link">
+                        <div class="b-news__img">
+                            <img decoding="async" loading="lazy" src="img/content/big-news-img-2.jpg" width="752" height="468" alt="temporary picture">
+                        </div>
+                        <div class="b-news__text">
+                            <div class="b-news__date">
+                                <time datetime="2021-07-21"><span class="b-news__year">2021</span> 21 / 07</time>
+                            </div>
+                            <div class="b-news__info">
+                                Leon - все почалося у великій компанії яка продавала сотні тисяч недорогих велосипедів. У
+                                нас не було велосипедів які нам було б не соромно порадити друзям і знайомим.
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <div class="b-more">
+                    <a href="#" class="btn btn-size-1 btn-color-2">
+                                <span class="btn__content">
+                                    Показати ще
+                                </span>
+                    </a>
+                </div>
+                @@include('html/_pagination.htm',{})
+            </section>
+
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+
+
