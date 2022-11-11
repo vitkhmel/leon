@@ -6804,6 +6804,13 @@ body.header-fixed .header__top-line {
 	}
 }
 
+.comment_hidden {
+	display: none;
+}
+.box-for-comments.active + .product-cart__comments-section-all {
+	display: none;
+}
+
 
 /*------------------media screen 1600 begin-----------------------------*/
 

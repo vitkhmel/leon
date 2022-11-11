@@ -5459,6 +5459,16 @@
             }, "slow");
             event.preventDefault();
         }));
+        $(document).on("click", ".product-cart__comments-section-all, .rating-line__link.all-comments", (function(event) {
+            event.preventDefault();
+            if ($(".box-for-comments").hasClass("active")) {
+                $(".comment_hidden").slideUp(350);
+                $(".box-for-comments").removeClass("active");
+            } else {
+                $(".comment_hidden").slideDown(350);
+                $(".box-for-comments").addClass("active");
+            }
+        }));
     }));
     window["FLS"] = false;
     isWebp();

@@ -12597,6 +12597,14 @@ body.header-fixed .header__top-line {
   line-height: 220px;
 }
 
+.comment_hidden {
+  display: none;
+}
+
+.box-for-comments.active + .product-cart__comments-section-all {
+  display: none;
+}
+
 /*------------------media screen 1600 begin-----------------------------*/
 
 /*------------------media screen 1600 end-----------------------------*/
