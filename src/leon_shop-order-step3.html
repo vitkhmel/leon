@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon"
+})
+
+<body class="subpage shop-order-page mod-with-mobile-fixed-bottom">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="title-of-page-2">
+            <div class="wrap">
+                <h1 class="h3">оформлення замовлення</h1>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="page-columns shop-order">
+                <div class="page-columns__left-column">
+                    <div class="tab checkout">
+                        <ul class="tab__title">
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-1">Повне офомлення</a>
+                            </li>
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-2">Швидке замовлення</a>
+                            </li>
+                        </ul>
+                        <div class="tab__info">
+                            <div class="tab__info-unit" id="tab-1">
+                                <a href="leon_shop-order-step1f.html" class="checkout__item ">
+                                    <div class="checkout__title">КОНТАКТНІ ДАНІ</div>
+                                </a>
+                                <div class="checkout__item">
+                                    <a href="leon_shop-order-step2.html" class="checkout__item ">
+                                        <div class="checkout__title">СПОСІБ ДОСТАВКИ</div>
+                                    </a>
+                                </div>
+                                <div class="checkout__item active">
+                                    <div class="checkout__title">СПОСІБ ОПЛАТИ</div>
+                                    <div class="checkout__info-descr">
+                                        <form class="checkout__form form mod-font-size">
+
+                                            <div class="box-for-checkout__box">
+                                                <div class="checkout__box nova-pochta">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check11" name="shipping_id">
+                                                            <label for="check11"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-nova-pochta">
+                                                            <svg width="35" height="35">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#NP"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Накладений платiж
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check12" name="shipping_id">
+                                                            <label for="check12"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-courier">
+                                                            <img decoding="async" loading="lazy" src="img/mastercard-icon.png" width="49" height="30" alt="mastercard">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Карткою на сайті
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check13" name="shipping_id">
+                                                            <label for="check13"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-courier">
+                                                            <img decoding="async" loading="lazy" src="img/mastercard-icon.png" width="49" height="30" alt="mastercard">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Переказ на карту
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check14" name="shipping_id">
+                                                            <label for="check14"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-nova-pochta">
+                                                            <svg width="37" height="35">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#privat"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Кредит або оплата частинами
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check2" name="shipping_id">
+                                                            <label for="check2"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-courier">
+                                                            <img decoding="async" loading="lazy" src="img/check.png" width="48" height="41" alt="check">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Оплата на р/рахунок альфа банку
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check3" name="shipping_id">
+                                                            <label for="check3"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-personally">
+                                                            <img decoding="async" loading="lazy" src="img/cash.png" width="49" height="35" alt="cash">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Готівкою
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab__info-unit" id="tab-2">
+                                @@include('html/_fast-order.htm',{})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('html/_order-right-column.htm',{})
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer-2.htm',{})
+    <div class="mobile-fixed-bottom">
+        <div class="wrap">
+            <div class="mobile-fixed-bottom__content">
+                <div class="mobile-fixed-bottom__left-part">
+                    <div class="price">1 500 <span class="currency">грн.</span></div>
+                </div>
+                <div class="mobile-fixed-bottom__right-part">
+                    <a href="leon_shop-order-result.html" class="mobile__btn">Оформити</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+
+
+
+
+
+
+

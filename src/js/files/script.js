@@ -360,7 +360,13 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
         }
         else {
-            var tabId = $(this).attr('href');
+            if ($(this).attr("data-id") !== undefined) {
+                var tabId = $(this).attr('data-id');
+            }
+            else {
+                var tabId = $(this).attr('href');
+
+            }
             $(this).addClass('active');
             $(this).closest('.tab').find('.tab__link').not(this).removeClass('active');
             $(this).closest('.tab').find('.tab__info-unit').not(tabId).hide(0);

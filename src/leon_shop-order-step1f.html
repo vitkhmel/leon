@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon"
+})
+
+<body class="subpage shop-order-page mod-with-mobile-fixed-bottom">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="title-of-page-2">
+            <div class="wrap">
+                <h1 class="h3">оформлення замовлення</h1>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="page-columns shop-order">
+                <div class="page-columns__left-column">
+                    <div class="tab checkout">
+                        <ul class="tab__title">
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-1">Повне офомлення</a>
+                            </li>
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-2">Швидке замовлення</a>
+                            </li>
+                        </ul>
+                        <div class="tab__info">
+                            <div class="tab__info-unit" id="tab-1">
+                                <div class="checkout__item active">
+                                    <div class="checkout__title">КОНТАКТНІ ДАНІ</div>
+                                    <div class="checkout__info-descr">
+                                        <form class="checkout__form form mod-font-size">
+                                            <div class="checkout__form-columns form-columns">
+                                                <div class="form-column">
+                                                    <div class="form__line">
+                                                        <label>
+                                                            <input type="text" required="">
+                                                            <span class="label-text">Ім'я*</span>
+                                                            <span class="label-border"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__line">
+                                                        <label>
+                                                            <input type="text" required="">
+                                                            <span class="label-text">Прізвище*</span>
+                                                            <span class="label-border"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-column">
+                                                    <div class="form__line">
+                                                        <label>
+                                                            <input type="tel" required="">
+                                                            <span class="label-text">Телефон*</span>
+                                                            <span class="label-border"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__line">
+                                                        <label>
+                                                            <input type="email">
+                                                            <span class="label-text">E-mail</span>
+                                                            <span class="label-border"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <a href="leon_shop-order-step2.html" class="btn btn-size-1 btn-color-2">
+                                                    <span class="btn__content">
+                                                        Далі
+                                                    </span>
+                                                </a>
+<!--                                                <button type="submit" class="btn btn-size-1 btn-color-2">-->
+<!--                                                    <span class="btn__content">-->
+<!--                                                        Далі-->
+<!--                                                    </span>-->
+<!--                                                </button>-->
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="checkout__item">
+                                    <div class="checkout__title">СПОСІБ ДОСТАВКИ</div>
+                                </div>
+                                <div class="checkout__item">
+                                    <div class="checkout__title">СПОСІБ ОПЛАТИ</div>
+                                </div>
+                            </div>
+                            <div class="tab__info-unit" id="tab-2">
+                                @@include('html/_fast-order.htm',{})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('html/_order-right-column.htm',{})
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer-2.htm',{})
+    <div class="mobile-fixed-bottom">
+        <div class="wrap">
+            <div class="mobile-fixed-bottom__content">
+                <div class="mobile-fixed-bottom__left-part">
+                    <div class="price">1 500 <span class="currency">грн.</span></div>
+                </div>
+                <div class="mobile-fixed-bottom__right-part">
+                    <a href="leon_shop-order-step2.html" class="mobile__btn">Далі</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+
+
+
+
+

@@ -5171,7 +5171,7 @@
         $(document).on("click", ".tab__link", (function(e) {
             e.preventDefault();
             if ($(this).hasClass("active")) ; else {
-                var tabId = $(this).attr("href");
+                if (void 0 !== $(this).attr("data-id")) var tabId = $(this).attr("data-id"); else tabId = $(this).attr("href");
                 $(this).addClass("active");
                 $(this).closest(".tab").find(".tab__link").not(this).removeClass("active");
                 $(this).closest(".tab").find(".tab__info-unit").not(tabId).hide(0);

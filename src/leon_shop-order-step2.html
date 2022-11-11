@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"leon"
+})
+
+<body class="subpage shop-order-page mod-with-mobile-fixed-bottom">
+@@include('html/_svg-sprite.htm')
+
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="content">
+        <div class="title-of-page-2">
+            <div class="wrap">
+                <h1 class="h3">оформлення замовлення</h1>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="page-columns shop-order">
+                <div class="page-columns__left-column">
+                    <div class="tab checkout">
+                        <ul class="tab__title">
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-1">Повне офомлення</a>
+                            </li>
+                            <li class="tab__title-item">
+                                <a class="tab__link" href="#tab-2">Швидке замовлення</a>
+                            </li>
+                        </ul>
+                        <div class="tab__info">
+                            <div class="tab__info-unit" id="tab-1">
+                                <a href="leon_shop-order-step1f.html" class="checkout__item ">
+                                    <div class="checkout__title">КОНТАКТНІ ДАНІ</div>
+                                </a>
+                                <div class="checkout__item active">
+                                    <div class="checkout__title">СПОСІБ ДОСТАВКИ</div>
+                                    <div class="checkout__info-descr">
+                                        <form class="checkout__form form mod-font-size">
+
+                                            <div class="box-for-checkout__box">
+                                                <div class="checkout__box nova-pochta">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check1" name="shipping_id">
+                                                            <label for="check1"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-nova-pochta">
+                                                            <svg width="35" height="35">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#NP"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Транспортной компанией "Нова Пошта"
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__box__box-content">
+                                                        <div class="delivery__option-form">
+
+                                                            <div class="delivery__option-form__tabs tab">
+                                                                <div class="delivery__option-form-tab-links">
+                                                                    <div class="tab__link active" data-id="#tab10">
+                                                                        <div class="checkbox mod-radio">
+                                                                            <input type="radio" id="check11" name="for-tab1" checked>
+                                                                            <label for="check11">Самовивіз зі складу</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab__link" data-id="#tab11">
+                                                                        <div class="checkbox mod-radio">
+                                                                            <input type="radio" id="check12" name="for-tab1">
+                                                                            <label for="check12">Кур'єром додому</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab__info">
+                                                                    <div class="tab__info-unit" id="tab10" style="display: block;">
+                                                                        <div class="delivery__option-form-box">
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <select>
+                                                                                        <option value="Варіант1">Область*</option>
+                                                                                        <option value="Варіант2">Варіант2</option>
+                                                                                        <option value="Варіант3">Варіант3</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <select>
+                                                                                        <option value="Варіант1">Місто / Населений пункт*</option>
+                                                                                        <option value="Варіант2">Варіант2</option>
+                                                                                        <option value="Варіант3">Варіант3</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <select>
+                                                                                        <option value="Варіант1">Номер відділення*</option>
+                                                                                        <option value="Варіант2">Варіант2</option>
+                                                                                        <option value="Варіант3">Варіант3</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab__info-unit" id="tab11" >
+                                                                        <div class="delivery__option-form-box">
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <select>
+                                                                                        <option value="Варіант1">Область*</option>
+                                                                                        <option value="Варіант2">Варіант2</option>
+                                                                                        <option value="Варіант3">Варіант3</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <select>
+                                                                                        <option value="Варіант1">Місто / Населений пункт*</option>
+                                                                                        <option value="Варіант2">Варіант2</option>
+                                                                                        <option value="Варіант3">Варіант3</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form__line">
+                                                                                <label>
+                                                                                    <input type="text" required="">
+                                                                                    <span class="label-text">Домашня адреса*</span>
+                                                                                    <span class="label-border"></span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="checkout__box courier">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check2" name="shipping_id">
+                                                            <label for="check2"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-courier">
+                                                            <img decoding="async" loading="lazy" src="img/delivery-icon.png" width="54" height="39" alt="courier">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Доставка курьером по Харькову
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__box__box-content">
+                                                        <div class="delivery__option-form">
+                                                            <div class="delivery__option-form-box">
+                                                                <div class="form__line">
+                                                                    <label>
+                                                                        <input type="text" required="">
+                                                                        <span class="label-text">Домашня адреса*</span>
+                                                                        <span class="label-border"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="checkout__box personally">
+                                                    <div class="checkout__box__top-line">
+                                                        <div class="checkbox mod-radio checkout__box-radio">
+                                                            <input type="radio" id="check3" name="shipping_id">
+                                                            <label for="check3"></label>
+                                                        </div>
+                                                        <div class="checkout__option-icon ic-personally">
+                                                            <img decoding="async" loading="lazy" src="img/will-call-icon.png" width="41" height="39" alt="will call">
+                                                        </div>
+                                                        <div class="checkout__option-title">
+                                                            Самовивіз
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__box__box-content">
+                                                        <p>
+                                                            м.Харків, вул. Культури 22В. Велосипед поставляється повністю
+                                                            зібраним і готовим до поїздки.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form__line">
+                                                <a href="leon_shop-order-step3.html" class="btn btn-size-1 btn-color-2">
+                                                    <span class="btn__content">
+                                                        Далі
+                                                    </span>
+                                                </a>
+<!--                                                <button type="submit" class="btn btn-size-1 btn-color-2">-->
+<!--                                                    <span class="btn__content">-->
+<!--                                                        Далі-->
+<!--                                                    </span>-->
+<!--                                                </button>-->
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="checkout__item">
+                                    <div class="checkout__title">СПОСІБ ОПЛАТИ</div>
+                                </div>
+                            </div>
+                            <div class="tab__info-unit" id="tab-2">
+                                @@include('html/_fast-order.htm',{})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('html/_order-right-column.htm',{})
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer-2.htm',{})
+    <div class="mobile-fixed-bottom">
+        <div class="wrap">
+            <div class="mobile-fixed-bottom__content">
+                <div class="mobile-fixed-bottom__left-part">
+                    <div class="price">1 500 <span class="currency">грн.</span></div>
+                </div>
+                <div class="mobile-fixed-bottom__right-part">
+                    <a href="leon_shop-order-step3.html" class="mobile__btn">Далі</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
+
+
+
+
+
+
