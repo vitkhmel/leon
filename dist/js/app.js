@@ -13,6 +13,13 @@
             document.documentElement.classList.add(className);
         }));
     }
+    function addLoadedClass() {
+        window.addEventListener("load", (function() {
+            setTimeout((function() {
+                document.documentElement.classList.add("loaded");
+            }), 0);
+        }));
+    }
     !function(t, e, n, o) {
         "use strict";
         function i(t, e) {
@@ -4003,4 +4010,5 @@
     }));
     window["FLS"] = false;
     isWebp();
+    addLoadedClass();
 })();
