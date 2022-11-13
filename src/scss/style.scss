@@ -6462,7 +6462,7 @@ table.mod-long {
 	width: 100%;
 	height: calc(100vh - 119px);
 	background: #fff;
-	z-index: 9;
+	z-index: 10;
 	overflow: hidden;
 	border-top: 1px solid #DFDFDF;
 }
@@ -8624,6 +8624,9 @@ header {
 		font-style: normal;
 		letter-spacing: normal;
 		padding: 0 15px;
+	}
+	.mobile-confirm-btn {
+		display: none;
 	}
 
 	body.mod-with-mobile-fixed-bottom {

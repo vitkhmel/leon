@@ -3977,6 +3977,29 @@
                 $(".box-for-comments").addClass("active");
             }
         }));
+        function confirm_order() {
+            $(".shop-order__confirm").addClass("active");
+            $(".shop-order__line-for-btn").addClass("mod-btn-active");
+            $(".mobile-confirm-btn").show();
+            $('.mobile__btn:not(".mobile-confirm-btn")').hide();
+        }
+        function cancel_confirm_order() {
+            $(".shop-order__confirm").removeClass("active");
+            $(".shop-order__line-for-btn").removeClass("mod-btn-active");
+            $(".mobile-confirm-btn").hide();
+            $('.mobile__btn:not(".mobile-confirm-btn")').show();
+        }
+        if ($(".tab.checkout").length) if (document.location.hash) {
+            var hash = document.location.hash;
+            if ("#quick-order" == hash) {
+                $(".quick-order__link").click();
+                confirm_order();
+            }
+        }
+        $(document).on("click", '.tab.checkout .tab__link:not(".order-step-3 .tab.checkout .tab__link")', (function(e) {
+            if ($(this).hasClass("quick-order__link")) confirm_order(); else cancel_confirm_order();
+        }));
+        if ($(".order-step-3").length) confirm_order();
     }));
     window["FLS"] = false;
     isWebp();
